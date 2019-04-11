@@ -9,7 +9,7 @@ from PIL import Image
 
 
 def cnn_db():
-    db=pymysql.connect('111.230.10.127','root','coolsoup','test',charset='utf8')
+    db=pymysql.connect('*.*.*.*','user','pwd','db',charset='utf8')
     return db
 
 def start(f_type):

@@ -11,7 +11,7 @@ import pymysql
 
 def cnn_db():
     print("正在连接数据库...")
-    db=pymysql.connect('111.230.10.127','root','coolsoup','test',charset='utf8')
+    db=pymysql.connect('*.*.*.*','user','pwd','db',charset='utf8')
     cur=db.cursor()
     cur.execute('select img,asin from asin_table where id>88541;')
     img_data=cur.fetchall()
